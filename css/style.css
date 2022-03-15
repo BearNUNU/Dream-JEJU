@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap');
+
+#container{
+    margin: 0 auto; 
+    width: 1200px;
+}
+/*********************************/
+/* 헤더 영역 - 로고 내비게이션 */
+/*********************************/
+header{
+    width: 100%;
+    height: 100px;
+    background-color: #07c;;
+}
+
+.logo{
+    width: 250px;
+    height: 100px;
+    float: left;
+    line-height: 100px;
+    padding-left: 20px;
+}
+
+.logo > a{
+    text-decoration: none;
+    font-family: 'Merienda', cursive;
+    font-size: 40px;
+    color: #fff;
+    text-shadow: 0 -1px 0 #222;
+}
+
+.nav{
+    height: 100px;
+    width: 900px;
+    float: right;
+}
+
+.TopMenu{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.TopMenu > li{
+    height: 100px;
+    padding-top: 45px;
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+    text-shadow: 0 -1px 0 #07c;
+    position: relative;
+}
+
+.TopMenu a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    text-shadow: 0 -1px 0 #07c;
+}
+
+.TopMenu :hover{
+    color:#000;
+    text-shadow: 0 -1px 0 #07c;
+}
+
+.TopMenu > li > ul{
+    display: none;
+    position: absolute;
+    width: 155px;
+    background-color: rgba(255,255,255,0.6);
+    left: 20px;
+    margin: 0px;
+}
+
+.TopMenu > li > ul > li{
+    padding: 10px 10px 10px 30px;
+}
+
+.TopMenu > li:hover > ul{
+    display: block;
+    z-index: 10;
+    margin-top: 10px;
+}
+
+.TopMenu > ul > li > ul >li{
+    padding: 10px;
+    font-size: 14px;
+}
+/*********************************/
+/* 메인 영역 슬라이드 */
+/*********************************/
+.slideShow {   
+    clear:both;   
+    width:100%;   
+    height:300px;  
+    overflow:hidden;   
+    position: relative;
+  }
+  .slides {
+    position: absolute;
+  }
+
+  .slides > img {
+    width:100%; 
+    float:left;  
+  }
+  
+  button{
+    position: absolute;
+    height:100%;  
+    top:0;
+    border:none;  
+    padding:20px;
+    background-color: transparent;  
+    color:#000;   
+    font-weight:800;   
+    font-size: 24px;  
+    opacity: 0.5; 
+  }
+
+  .prev {
+    left:0;  
+  }
+
+  .next {
+    right:0; 
+  }
+
+  button:hover {
+    background-color:#222;  
+    color:#fff; 
+    opacity:0.6;  
+    cursor:pointer; 
+  }
+
+  button:focus {
+    outline:0;  
+  }
+/*********************************/
+/* 메인 영역2 */
+/*********************************/
+.contents{
+    width: 100%;
+    height: 300px;
+}
+/*********************************/
+/* 메인 영역 탭  메뉴 */
+/*********************************/
+.tap_menu{
+    float: left;
+    width: 600px;
+    height: 100%;
+    background-color: cornflowerblue;
+}
+/*********************************/
+/* 메인 영역 퀵 메뉴 */
+/*********************************/
+.quick_menu{
+    float: right;
+    width: 600px;
+    height: 100%;
+    background-color: tomato;
+}
+/*********************************/
+/* 푸터 영역 */
+/*********************************/
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: red;
+}
